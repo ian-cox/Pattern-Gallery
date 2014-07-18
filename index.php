@@ -69,7 +69,7 @@
 		if(in_array($ext, $imgext)){
 		if($file != '.' && $file != '..'){?>
 	
-		<div class="img-container" style="background: url('img/<?php echo $file ?>') repeat center center fixed;"></div>
+		<div class="img-container" style="background: url('img/<?php echo $file ?>') repeat center center;"></div>
 
 	
 	<?php }}}?>
