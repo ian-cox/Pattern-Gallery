@@ -1,0 +1,155 @@
+@font-face {
+	font-family: 'entypo';
+	src:url('../fonts/entypo.eot');
+	src:url('../fonts/entypo.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/entypo.woff') format('woff'),
+		url('../fonts/entypo.ttf') format('truetype'),
+		url('../fonts/entypo.svg#entypo') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+*, *:after, *:before {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+
+html, body{
+	border: 1.2em solid #1d1d24;
+	font-size: 16px;
+	display: block;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	color: #af8e56;
+}
+
+.slider .img-container{
+	width: 100%;
+	height: 9999px;
+}
+
+.slider{
+	background-color: #1d1d24;
+	display: block;
+	height: 100%;
+	min-width: 100%;
+  	min-height: 100%;
+}
+
+
+/* Arrows */
+
+.slick-prev:focus, .slick-prev:hover{
+	cursor:pointer;
+}
+
+.slick-next, .slick-prev{
+	background-color: transparent;
+	top: 50%;
+	height: 1.5em;
+	margin-top: -.75em;
+	z-index: 9999;
+	border: none;
+  	position: absolute;
+	text-align: center;
+	font-family: 'entypo';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1.1em;
+	font-size: 85px;
+	color: #fff;
+	-webkit-font-smoothing: antialiased;
+	opacity: 0.7;
+}
+
+.slick-next:hover, .slick-prev:hover{
+opacity: 1;
+}
+
+.slick-next{
+	right: 0;
+	margin-right: 15px;
+}
+.slick-next:after{content: "\e000";}
+
+.slick-prev:before{
+	left: 0;
+	margin-left: 15px;
+	content: "\e001";
+}
+
+
+.slick-dots{
+	position: absolute;
+	bottom: 0;
+}
+
+
+button:focus {outline:none;}
+
+button:active{
+-ms-transform: scale(.9,.9);
+-webkit-transform: scale(.9,.9);
+transform: scale(.9,.9);
+}
+
+
+
+/* Media Queries */
+
+/* Mobile Portrait */
+@media only screen and (min-width: 320px) {
+	body {
+		font-size: 1em;
+	}	
+}
+
+/* Mobile Landscape */
+@media only screen and (min-width: 480px) {
+	body {
+		font-size: 1.5em;
+	}
+}
+
+/* Small Tablet */
+@media only screen and (min-width: 600px) {
+	body {
+		font-size: 2em;
+	}
+}
+
+/* Tablet/Notebook */
+@media only screen and (min-width: 768px) {
+	body {
+		font-size: 2.5em;
+	}
+}
+
+/* Landscape Tablet/Notebook/Laptop */
+@media only screen and (min-width: 1024px) { 	
+	body {
+		font-size: 3em;
+	}
+}
+
+/* Desktop */
+@media only screen and (min-width: 1280px) {
+	body {
+		font-size: 3.5em;
+	}	
+}
+
+/* Widescreen */
+@media only screen and (min-width: 1440px) { 
+	body {
+		font-size: 4em;
+	}
+}
