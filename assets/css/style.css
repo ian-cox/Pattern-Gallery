@@ -52,6 +52,7 @@ html, body{
 	background-color: transparent;
 	top: 50%;
 	height: 1.5em;
+	width: 1em;
 	margin-top: -.75em;
 	z-index: 9999;
 	border: none;
@@ -74,17 +75,27 @@ html, body{
 opacity: 1;
 }
 
+
+
+
 .slick-next{
 	right: 0;
-	margin-right: 15px;
+	padding: 0;	
+	margin-right: 0px;
 }
 .slick-next:after{content: "\e000";}
 
-.slick-prev:before{
+
+
+
+.slick-prev{
 	left: 0;
-	margin-left: 15px;
-	content: "\e001";
+	padding: 0;
+	margin-left: 0px;
 }
+.slick-prev:before{content: "\e001";}
+
+
 
 
 .slick-dots{
@@ -117,6 +128,15 @@ transform: scale(.9,.9);
 	body {
 		font-size: 1.5em;
 	}
+	.slick-next, .slick-prev{
+	font-size: 65px;
+	}
+	.slick-next{
+		margin-right: 25px;
+	}
+	.slick-prev{
+		margin-left: 25px;
+	}	
 }
 
 /* Small Tablet */
